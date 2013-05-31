@@ -8,7 +8,7 @@ Refer to the following tutorials and resources to learn more about Montage.
 
 ### I'm new
 
-[Getting Started (draft)](/docs/Getting-Started-draft.html)
+[Getting Started (draft)](Getting-Started-draft.html)
 
 1. [Quick Start](https://github.com/montagejs/montage/wiki/Quick-Start) - Setup
 2. [Exploring components](https://github.com/montagejs/montage/wiki/Exploring-components) - Tour the different parts of a component
