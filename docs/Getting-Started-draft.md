@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 #Getting Started
 
 _(This is still a draft)_
