@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Naming Conventions
+---
+
 # Naming Conventions
 
 ## Modules

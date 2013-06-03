@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 NumberInput Component
 
 NumberInput is a Component wrapper for the <input type=”number”> HTMLElement. The HTML markup for the NumberInput is the same as the standard HTML5 markup (<input>). Wrapping the <input> HTMLElement as a Montage NumberInput component adds Data Binding support for all writable attributes of this element.

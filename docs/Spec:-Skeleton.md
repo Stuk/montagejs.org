@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 Skeleton theme	Editor Simon Luthi
 
 

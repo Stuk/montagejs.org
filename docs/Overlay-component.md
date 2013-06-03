@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Overlay component
+---
+
 # Overlay component
 # ["edge" branch only]
 The `Overlay` positions content over the page in a modal or non-modal way.

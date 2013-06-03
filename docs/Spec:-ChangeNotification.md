@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 
 Change Notification API	Editor François Frisch
 

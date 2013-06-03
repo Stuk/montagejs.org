@@ -114,6 +114,10 @@
     max-width: 800px;
 }
 
+.docs img {
+    max-width: 100%;
+}
+
 .docs ol li {
     margin: 1em 0;
 }

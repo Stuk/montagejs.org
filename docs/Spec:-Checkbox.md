@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 Checkbox Component
 
 Checkbox Component wraps a HTML <input type=”checkbox” ../> element and provides data binding support. Checkbox extends from CheckInput.

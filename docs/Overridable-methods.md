@@ -1,3 +1,9 @@
+---
+layout: docs
+title: Overridable Methods
+---
+# Overridable Methods
+
 You can implement certain methods on your objects and components that will be called. This is a list of them until we have more JSDoc documentation.
 
 ## Object

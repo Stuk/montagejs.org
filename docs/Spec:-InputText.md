@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 InputText is a Component wrapper for the `<input>` HTMLElement. The HTML markup for the InputText is the same as the standard HTML5 markup (`<input>`). Wrapping the `<input>` HTMLElement as a Montage Textfield component adds Data Binding support for all writable attributes of this element.
 
 It supports all (most?) standard attributes of the `<input>` HTMLElement as specified here - http://www.w3.org/TR/html5/the-input-element.html#the-input-element

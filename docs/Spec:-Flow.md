@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 FLOW Spec in progress by Javier Román
 
 Index

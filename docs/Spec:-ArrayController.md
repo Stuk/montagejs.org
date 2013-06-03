@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 
 ArrayController	Editor François Frisch
 

@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Component composition using Montage
+---
+
 # Component composition using Montage.
 
 The way to create and compose the ui for your application using montage is primarily by expressing this in the markup of your templates.

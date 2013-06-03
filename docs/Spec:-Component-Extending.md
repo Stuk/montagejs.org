@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 # Component Extending
 _Editor António Afonso_
 

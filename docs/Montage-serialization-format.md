@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Montage serialization format
+---
+
 # Montage serialization format
 This document explains the serialization format used by Montage to serialize, and later deserialize, an _object graph_. A serialized object graph describes the objects, components, properties, component data bindings, and DOM relationships involved in a Montage application. Montage uses JavaScript Object Notation (JSON) as the serialization format. At runtime, Montage parses the JSON structure and deserializes its contents into JavaScript that is then evaluated and executed in the browser.
 

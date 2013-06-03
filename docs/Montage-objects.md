@@ -1,4 +1,10 @@
+---
+layout: docs
+title: Montage objects
+---
+
 # Montage objects
+
 Montage objects are based on the [ECMAScript 5](http://ecma-international.org/ecma-262/5.1/#sec-8.6) object model, which uses `Object.create()` to define new objects. Montage provides a similar method called `Montage.create()` that serves two purposes: to define new Montage types that share a common interface, and to create new _instances_ from those types.
 
 ## Montage type definition and object creation

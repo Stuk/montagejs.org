@@ -1,3 +1,10 @@
+---
+layout: docs
+title: Merge Commit Message
+---
+
+# Merge Commit Message
+
 Looking at the history and at the number of commits I think it would be beneficial to normalize the merge commit messages. This means that all merges need to be made using a custom message. Using the command line this is done with the -m parameter. If you are using a GUI of your choice please find out how to do this.
 
     `git merge -m "..." branch-name`

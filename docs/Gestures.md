@@ -1,4 +1,10 @@
+---
+layout: docs
+title: Gestures
+---
+
 # Gestures
+
 Montage provides a composer API for supporting commonly used gestures. Typically DOM events are device specific such as click or touch events. The Composer API abstracts these into higher order events such as press, so that you can focus on handling a specific action rather than the multiple ways that action could be carried out. Montage currently supports press, long press, and swipe gestures. More will be added as Montage matures.
 
 ## Press composer

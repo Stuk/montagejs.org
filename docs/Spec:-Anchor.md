@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 Anchor wraps a `<a>` HTMLElement and provides Data binding support. Anchor extends from NativeControl.
 
 Fires an _action_ event

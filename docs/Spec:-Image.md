@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 Image Component
 
 Image wraps a <img> HTMLElement and provides Data binding support. Image extends from NativeControl.

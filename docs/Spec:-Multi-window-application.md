@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 *** DRAFT ***
 Spec: Multi-window application	Editor JF Ducarroz
 

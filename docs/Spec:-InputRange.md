@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 RangeInput Component
 
 RangeInput is a Component wrapper for the <input type=”range”> HTMLElement. The HTML markup for the RangeInput is the same as the standard HTML5 markup (<input>). Wrapping the <input> HTMLElement as a Montage RangeInput component adds Data Binding support for all writable attributes of this element.

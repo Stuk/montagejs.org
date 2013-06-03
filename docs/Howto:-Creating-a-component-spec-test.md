@@ -1,4 +1,9 @@
-Creating a component spec test
+---
+layout: docs
+title: Creating a component spec test
+---
+
+# Creating a component spec test
 
 1. Create a new Javascript file test/ui/todo-spec.js
 

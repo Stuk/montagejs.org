@@ -1,3 +1,10 @@
+---
+layout: docs
+title: Montage Bootstrapping
+---
+
+# Montage Bootstrapping
+
 This document will describe the bootstrapping process for Montage.
 
 After setting up some variables `exports.initMontage` is called. This calls `getPlatform` which returns an object with platform specific functions (currently the browser and node are supported).

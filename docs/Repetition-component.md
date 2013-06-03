@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Repetition component
+---
+
 # Repetition component
 The repetition iterates through its ```objects``` property rendering the content originally inside the repetition's own element for each object. 
 

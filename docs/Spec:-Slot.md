@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 Slot Component
 
 The slot component is a building block component which has no template but accepts either a component or an element to render as its content.

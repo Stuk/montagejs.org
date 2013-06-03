@@ -1,3 +1,8 @@
+---
+layout: docs
+title: FAQ for the FRB Transition
+---
+
 # FAQ for the FRB Transition
 
 ## How do I observe a path from my object for changes after they've happened?

@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 
 Component Customization	Editors António Afonso
         Kris Kowal

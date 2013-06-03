@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Rich Text Editor
+---
+
 # Rich Text Editor
 
 The `RichTextEditor` component recently debuted in Montage 0.8. This provides a way for the user to enter text that will be transformed to HTML and can have styles applied to it.

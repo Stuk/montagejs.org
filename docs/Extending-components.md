@@ -1,4 +1,10 @@
+---
+layout: docs
+title: Extending components
+---
+
 # Extending components
+
 Extending a component is similar to extending a JavaScript object: you create a new object and make its prototype the object you want to extend. The main difference is that you may also need to extend the component’s HTML template, when one is present.
 
 The process of extending a component is the same as creating an entirely new component using the original one as its prototype. If the customization doesn’t require a change in the component’s controller (its JavaScript object) then it is sufficient to create an instance of the extended object. If the component being extended has an HTML template, the developer must either point to the template of the extended component, or create a new template.

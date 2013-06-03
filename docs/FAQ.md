@@ -1,4 +1,10 @@
+---
+layout: docs
+title: FAQ
+---
+
 # FAQ
+
 Answers to frequently asked questions about Montage.
 
 ### How do I get started with the Montage framework?

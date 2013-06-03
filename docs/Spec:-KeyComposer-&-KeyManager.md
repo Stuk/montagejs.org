@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 ## Introduction
 
 A desktop application would not be complete without shortcuts, usually menu shortcuts. There is no difference with a web application, Montage needs to provides support for shortcuts.

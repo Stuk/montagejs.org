@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Autocomplete textfield
+---
+
 # Autocomplete textfield
 It is becoming increasingly common for apps to offer predictive suggestions as the user types in a text field. One example of this is a search field suggesting results that match the text that the user has already typed.
 

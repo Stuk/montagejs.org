@@ -1,4 +1,10 @@
+---
+layout: docs
+title: Data binding
+---
+
 # Data binding
+
 Data binding lets you easily associate the value of a property of one object to a property in another object. Data binding relies on the property change observer feature in Montage When the value oThe object that defines the binding is called the source object, and the object to which it binds is called the bound object. When the value of the property changes on the bound object, the new value is assigned to the corresponding property in the source object.
 
 ![Montage Data Binding](http://montagejs.org/docs/img/databinding.png)

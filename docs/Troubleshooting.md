@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Troubleshooting
+---
+
 # Troubleshooting
 If your Montage application isn’t working as expected, you can use the JavaScript console available in modern web browsers to help diagnose the problem.
 

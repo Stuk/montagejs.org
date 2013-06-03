@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 
 Component Draw Cycle	Editor Heather Douglass
 

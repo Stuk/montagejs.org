@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Hello Montage
+---
+
 1. [Quick Start](https://github.com/montagejs/montage/wiki/Quick-Start)
 2. [Exploring Components](https://github.com/montagejs/montage/wiki/Exploring-components)
 3. **Hello Montage**

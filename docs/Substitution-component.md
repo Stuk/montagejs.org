@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Substitution component
+---
+
 # Substitution component
 # ["edge" branch only]
 The `Substitution` handles a group of elements and shows only one at a time.

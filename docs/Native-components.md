@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Native components
+---
+
 # Native components
 Montage initially debuted with a set of custom touch friendly components, dubbed Bluemoon after their blue hue. Its also a name of a beer, but that had nothing to do with it. What so ever.
 

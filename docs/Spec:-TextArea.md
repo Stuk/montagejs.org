@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 TextArea Component
 
 TextArea is a Montage Component wrapper for the <textarea> HTMLElement. Montage provides data binding support for the standard <textarea> component.

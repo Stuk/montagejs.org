@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 
 Globalization	Editor Stuart Knightley and António Afonso
 

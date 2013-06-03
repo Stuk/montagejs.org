@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Getting Started
+---
+
 - Draft -
 Component	Editor Heather Douglass
 

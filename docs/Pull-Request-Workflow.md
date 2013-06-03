@@ -1,3 +1,9 @@
+---
+layout: docs
+title: Pull Request Workflow
+---
+# Pull Request Workflow
+
 The idea is that the way you add code to montage is by creating a branch in your GitHub fork and asking for it to be merged into master, this is a pull request.
 
 ## Keeping in sync

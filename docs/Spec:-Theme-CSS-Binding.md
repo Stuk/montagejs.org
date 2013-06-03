@@ -1,3 +1,8 @@
+---
+layout: docs
+title: 
+---
+
 Component to an element with montage-data-id. Native component we map attributes to properties.
 
 **CSSDeclarationComponent**: map to 1 CSS Rule:
