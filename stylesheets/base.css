@@ -87,6 +87,18 @@ article {
     vertical-align: middle;
 }
 
+.header .github {
+    float: right;
+    margin-top: 16px;
+    width: 32px;
+    height: 32px;
+    opacity: .8;
+}
+
+.header .github:hover {
+    opacity: 1;
+}
+
 @media all and (max-width: 800px) {
     .header {
         padding: 0;
@@ -114,9 +126,7 @@ article {
     padding: 20px;
     color: hsl(196,0%,50%);
     text-shadow: 0 1px 2px hsla(0,0%,0%,.5);
-    background: hsla(0,0%,100%,.05);
-    border-left: 1px solid hsla(0,0%,100%,.08);
-    border-right: 1px solid hsla(0,0%,0%,.3);
+    //background: hsla(0,0%,100%,.05);
 }
 
 .nav-item:hover {
@@ -127,8 +137,9 @@ article {
 .nav-item:active,
 .nav-item.active {
     color: hsl(196,100%,50%);
-    background: hsla(0,0%,0%,.1);
-    border-color: transparent;
+    background: hsla(0,0%,0%,.2);
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.4);
+    
 }
 
 @media all and (max-width: 800px) {
