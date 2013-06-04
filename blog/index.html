@@ -3,11 +3,12 @@ layout: blog
 title: Montage blog
 ---
 
-<ul>
+<h1>The Montage Blog</h1>
+
+<ol>
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
-</ul>
+</ol>
