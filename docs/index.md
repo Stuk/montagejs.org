@@ -8,9 +8,9 @@ Refer to the following tutorials and resources to learn more about Montage.
 
 ## I'm new
 
-1. [Quick Start](Quick-Start) - Setup
-2. [Exploring components](Exploring-components) - Tour the different parts of a component
-3. [Hello Montage](Hello-Montage) - Create your first Montage app.
+1. [Quick Start](Quick-Start.html) - Setup
+2. [Exploring components](Exploring-components.html) - Tour the different parts of a component
+3. [Hello Montage](Hello-Montage.html) - Create your first Montage app.
 
 [Getting Started (draft)](Getting-Started-draft.html)
 

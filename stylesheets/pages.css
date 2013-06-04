@@ -106,6 +106,49 @@
 }
 
 
+/* Subnav ----------------------------------------- */
+
+@media (max-width: 1300px) {
+    .subnav {
+        display: none;
+    }
+}
+
+.subnav {
+    position: fixed;
+    top: 96px;
+    right: 30px;
+    width: 200px;
+}
+
+.subnav summary {
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: hsl(0, 0%, 30%);
+}
+
+.subnav a {
+    display: block;
+    margin-left: 9px;
+    padding: 5px 10px 5px 20px;
+    color: hsl(0,0%,60%);
+    border-left: 2px solid hsl(0,0%,85%);
+    font-size: 13px;
+}
+
+.subnav a:hover {
+    background-color: hsla(210,100%,50%,.05);
+}
+
+.subnav a:active {
+    color: hsl(0,0%,30%);
+    color: hsl(0,0%,100%);
+    background-color: hsla(210,100%,50%,1);
+}
+
+
 
 /* Docs page ----------------------------------------- */
 
