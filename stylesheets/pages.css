@@ -116,9 +116,12 @@
 
 .subnav {
     position: fixed;
+    z-index: 1;
+    padding: 20px;
     top: 96px;
     right: 30px;
     width: 200px;
+    background-color: hsl(0,0%,95%);
 }
 
 .subnav summary {
