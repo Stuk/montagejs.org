@@ -156,6 +156,10 @@
 
 /* Blog ----------------------------------------- */
 
+.blog article {
+    max-width: 800px;
+}
+
 .blog ol {
     padding: 0 0 0 1em;
     font-size: 1.4em;

@@ -1,2 +1,2 @@
 permalink: /blog/:year/:month/:day/:title
-paginate: 3
+markdown: redcarpet

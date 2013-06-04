@@ -20,6 +20,7 @@ Refer to the following tutorials and resources to learn more about Montage.
 
 ## Help
 * [FAQ](FAQ.html)
+* [Troubleshooting](Troubleshooting.html)
 
 ## Get in touch
 * For __questions__ join us on [irc.freenode.net#montage](http://webchat.freenode.net/?channels=montage).
