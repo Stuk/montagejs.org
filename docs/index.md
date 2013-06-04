@@ -7,11 +7,6 @@ title: Montage Docs
 Refer to the following tutorials and resources to learn more about Montage.
 
 ## I'm new
-
-1. [Quick Start](Quick-Start) - Setup
-2. [Exploring components](Exploring-components) - Tour the different parts of a component
-3. [Hello Montage](Hello-Montage) - Create your first Montage app.
-
 [Getting Started (draft)](Getting-Started-draft.html)
 
 ## I wanna play
@@ -20,22 +15,10 @@ Refer to the following tutorials and resources to learn more about Montage.
 
 ## I wanna learn
 * [Repetition component](Repetition-component.html)
-* [Substitution component](Substitution-component.html)
-* [Overlay component](Overlay-component.html) [edge only]
-* [Rich Text Editor](Rich-Text-Editor.html)
-* [Autocomplete textfield](Autocomplete-textfield.html)
-* [Native components](Native-components.html)
 * [Extending components](Extending-components.html)
-* [Montage objects](Montage-objects.html)
-* [Montage serialization format](Montage-serialization-format.html)
 * [Data binding](Data-binding.html)
-* [Event handling](Event-handling.html)
-* [Draw cycle](Component-draw-cycle.html)
-* [Gestures](Gestures.html)
-* [Blueprints](Blueprints.html)
 
 ## Help
-* [Troubleshooting](Troubleshooting.html)
 * [FAQ](FAQ.html)
 
 ## Get in touch

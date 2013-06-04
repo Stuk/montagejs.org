@@ -27,10 +27,11 @@ Open a Terminal window and install the latest version of `minit`:
 
 **Mac OS X**
 
-```
-$ mkdir ~/.npm
-$ sudo npm install -g minit@latest
-```
+{% highlight text %}
+    $ mkdir ~/.npm
+    $ sudo npm install -g minit@latest
+{% endhighlight %}
+
 > **Note**: `minit` does not need sudo access; this is a workaround due to a current [issue](https://github.com/joyent/node/issues/3821) with the OS X node installer package.
 
 **Windows**
@@ -42,10 +43,10 @@ You are now ready to create your first Montage application.
 
 1. Use `minit` to create a Montage application named hello.
 
-    ```
+    {% highlight text %}
     $ minit create:app -n hello
-    ```
-
+    {% endhighlight %}
+    
     This generates the hello directory—which contains the default Montage application template, including the production dependencies—in your current directory.
 
 2. To verify your installation, switch to the hello directory and serve your new Montage project using an HTTP server—either your own, preferred local web server or one of the following.
@@ -54,10 +55,11 @@ You are now ready to create your first Montage application.
 
     **Mac OS X / Linux**
 
-    ```
+    {% highlight text %}
     $ cd hello
     $ python -m SimpleHTTPServer
-    ```
+    {% endhighlight %}
+    
     **Windows**
 
     Install mongoose available at code.google.com/p/mongoose (for details refer to the YouTube video for [Windows users](http://www.youtube.com/watch?v=HDOItFcfopY)).
@@ -89,17 +91,19 @@ Let’s dress up the Welcome component by adding a user interface component. Fir
 
 1. Open a new Terminal window, switch to the hello directory, and run the `minit` command to create a new component named hello-world:
 
-    ```
+    {% highlight text %}
     $ cd hello
     $ minit create:component -n hello-world
-    ```
+    {% endhighlight %}
+    
     `minit` creates the hello-world.reel directory in the ui directory of your hello app installation, complete with a default set of HTML, CSS, and JS files. Next, you need to add content to your new component that can be rendered inside the browser.
 
 2. Go to the hello/ui/hello-world.reel directory, open the hello-world.html file in your preferred text editor, and insert "Hello World" inside the HTML body div:
 
-    ```
+    {% highlight html %}
     <div data-montage-id="hello-world" class="HelloWorld">Hello World</div>
-    ```
+    {% endhighlight %}
+    
 3. Save and close the hello-world.html template.
 
     Next, you need to tell the Welcome component to use your new component inside its template.
@@ -110,12 +114,12 @@ Let’s dress up the Welcome component by adding a user interface component. Fir
 
 5. Populate the existing entry for the helloWorld object with the component's ID (`protoype`) and properties:
 
-    ```
+    {% highlight json %}
     "prototype": "ui/hello-world.reel",
     "properties": {
         "element": {"#": "hello-world"}
     }
-    ```
+    {% endhighlight %}
 
     This declares an instance of the HelloWorld component with an object label of “helloWorld” as a child of the Welcome component: The component’s module ID (“/ui/hello-world.reel”) allows Montage to recreate the component from its serialized form at runtime. The component’s “element” property, which corresponds to the associated HTML element on which the component operates, is set to the HTML body div with the `data-montage-id` attribute of “hello-world”.
 
@@ -142,27 +146,29 @@ Follow these steps:
 
 1. Open a new Terminal window, switch to the hello directory, and run `minit` to create a new component called name-tag:
 
-    ```
+    {% highlight text %}
     $ cd hello
     $ minit create:component -n name-tag
-    ```
+    {% endhighlight %}
 
     As you’d expect, `minit` creates the name-tag.reel directory complete with the associated files in the hello/ui directory. Next, you need to add the placeholder content that is to replace “World” in “Hello World.”
 
 2. Go to the hello/ui/name-tag.reel directory, open the name-tag.html file, and replace the default HTML body div with the following span:
 
-    ```
+    {% highlight html %}
     <span data-montage-id="name-tag" class="NameTag">Name</span> 
-    ```
+    {% endhighlight %}
+    
 3. Save and close name-tag.html.
 
 4. To have the content in this template appear in a different color, open the name-tag.css file and add the following rule:  
 
-    ```
+    {% highlight json %}
     .NameTag {
         color: red;
     }
-    ```
+    {% endhighlight %}
+    
     > **Note**: Style sheets for newly created components only contain the class name of the root element. It’s up to you to populate them with your meticulously crafted rules. Note also that the CSS class name is a CamelCase version of the component’s name. This is part of our [CSS naming convention](https://github.com/montagejs/montage/wiki/Naming-Conventions); it allows us to scope each component's CSS so that it doesn't "leak out" and accidentally style other components.
 
     Next, you need to instruct the HelloWorld component to use the NameTag component.
@@ -171,21 +177,22 @@ Follow these steps:
 
     In the head section, in the montage-serialization script block, following the “owner” property, add the serialization entry for the NameTag component (be sure to add a comma following the “owner” entry to separate the objects):
 
-    ```
+    {% highlight json %}
     "nameTag": {
         "prototype": "ui/name-tag.reel",
         "properties": {
             "element": {"#": "nameTag"}
         }
     }
-    ```
+    {% endhighlight %}
 
 6. In the HTML body, inside the div, replace “World” with the following span:
 
-    ```
+    {% highlight html %}
     <div data-montage-id="main" class="Main">Hello <span data-montage-id="nameTag"></span>
     </div>
-    ```
+    {% endhighlight %}
+    
 7. Refresh the browser and enjoy the fancy red Name tag: The contents of the NameTag component are rendered using the `name-tag` element from its included HTML template and styled using its included CSS.
 
 ![GS_Figure3](/images/docs/gs_tut_fig_03.png)
@@ -199,17 +206,17 @@ Your next task in your goal to create a more personalized greeting is to instruc
 1. Add a name property to the NameTag component's implementation at ui/name-tag.reel/name-tag.js: 
 
     **[NEED TO REPLACE WITH UPDATED PROTOTYPE CREATION]**
-    ```
+    {% highlight json %}
     exports.NameTag = Montage.create(Component, /** @lends module:"ui/name-tag.reel".NameTag# */ {
         name: {
             value: "Alice"
         }
     });
-    ```
+    {% endhighlight %}
 
 2. Add a Montage-provided Text component to name-tag.html. In the head section, in the object graph, following the “owner” property, add the following serialization entry for the name object:
 
-    ```
+    {% highlight json %}
     "name": {
         "prototype": "montage/ui/text.reel",
         "properties": {
@@ -219,15 +226,16 @@ Your next task in your goal to create a more personalized greeting is to instruc
             "value": {"<-": "@owner.name"}
         }
     }
-    ```
+    {% endhighlight %}
 
 3. In the HTML body, inside the span, replace the “Name” text with the following span:
-    ```
-    <span data-montage-id="name"></span>
-    ```
+    {% highlight html %}
+        <span data-montage-id="name"></span>
+    {% endhighlight %}
+    
     This specifies that the `value` property of the Text component you create will be the same as the owner's `name` property (here: name-tag.html). Anytime the `owner.name` property changes, so will the value you see in the rendered view.
 
-4. Refresh the page. Instead of a red Name tag you should now see a red Alice.
+5. Refresh the page. Instead of a red Name tag you should now see a red Alice.
 
 ![GS_Figure4](/images/docs/gs_tut_fig_04.png)
 
@@ -245,7 +253,7 @@ For the purpose of this example, you want NameTag to be a read-only component, s
 
     **Serialization**
 
-    ```
+    {% highlight json %}
     "nameInput": {
         "prototype": "montage/ui/textfield.reel",
         "properties": {
@@ -255,15 +263,16 @@ For the purpose of this example, you want NameTag to be a read-only component, s
             "value": {"<->": "@nameTag.name"}
         }
     }
-    ```
+    {% endhighlight %}
+    
     **HTML body**
 
-    ```
+    {% highlight html %}
     <div data-montage-id="main" class="Main">
         Hello <span data-montage-id="nameTag"></span>
         <input type="text" data-montage-id="nameInput">
     </div>
-    ```
+    {% endhighlight %}
 
     This binds the `value` property of the TextField component to the NameTag's `name` property, effectively making it a two-way binding as indicated by the double-headed arrow; changes on either side of this binding propagate to the other side. (In addition to deciding where components should live, you also have to decide which side to establish a binding on; but that's a topic for another tutorial.)
 
@@ -283,7 +292,7 @@ Components can emit events in the same sense that DOM elements emit events. A Mo
 
     **Serialization** 
 
-    ```
+    {% highlight json %}
     "greetButton": {
         "prototype": "montage/ui/button.reel",
         "properties": {
@@ -299,17 +308,18 @@ Components can emit events in the same sense that DOM elements emit events. A Mo
             }
         ]
     }
-    ```
+    {% endhighlight %}
 
     **HTML body**
 
-    ```
+    {% highlight html %}
     <div data-montage-id="main" class="Main">Hello
-     <span data-montage-id="nameTag"></span>
-     <input type="text" data-montage-id="nameInput">
-     <button data-montage-id="greetButton"></button>
+        <span data-montage-id="nameTag"></span>
+        <input type="text" data-montage-id="nameInput">
+        <button data-montage-id="greetButton"></button>
     </div>
-    ```
+    {% endhighlight %}
+    
     For the sake of showing off bindings we use one here to bind the label of the `greetButton` element to the `nameTag.name` property. The listeners object contains an array (indicated by the square brackets: [ … ]) of listener entries that specify the event type being observed by name and the listener interested in handling the event. Of course, you can register many different listeners here and they can also provide a `useCapture` property in their entry to specify that the event should be handled in the capture phase of distribution.
 
 2. Refresh the page. You should see a button whose label matches the current name.
@@ -322,7 +332,7 @@ Components can emit events in the same sense that DOM elements emit events. A Mo
 
     **[NEED TO REPLACE WITH UPDATED PROTOTYPE CREATION]**
 
-    ```
+    {% highlight json %}
     exports.HelloWorld = Montage.create(Component, /** @lends module:"ui/hello-world.reel".HelloWorld# */ {
 
         handleGreetButtonAction: {
@@ -332,7 +342,8 @@ Components can emit events in the same sense that DOM elements emit events. A Mo
         }
 
     });
-    ```
+    {% endhighlight %}
+    
     Note the specifics here: While the standard JavaScript `addEventListener` either expects a function reference or an eventHandler object that implements a `handleEvent` method, Montage helps direct an event to a more specific handler method on a listener if implemented.
 
     In this case you've implemented `handleGreetButtonAction`, which describes that this method will handle action events emitted from a target with an identifier of `greetButton` during the bubble phase of event distribution. This is the most specific handler possible (less specific alternatives would have been: `handleAction` and `handleEvent`). It reduces the need for inspecting each event in a generic `handleEvent` method to determine what the event was and how it should be handled.
@@ -350,13 +361,13 @@ Although it has served you well so far, it's time to ditch the default Welcome c
 
 1. Inside index.html remove the explicit loading of the Welcome component from the owner entry and replace it with the Main component (part of the default Montage application installation):
 
-    ```
+    {% highlight json %}
     "owner": {
         "prototype": "montage/ui/loader.reel"
             "mainModule": "ui/main.reel",
             "mainName": "Main"
     }
-    ```
+    {% endhighlight %}
 
 2. Refresh the browser and note that the Welcome component is no longer present, leaving nothing but a blank page for you to start your own project, with the Main component awaiting your assembly instructions.
 

@@ -46,7 +46,7 @@ The first parameter, `sourceObject`, is a reference to the object on which the b
 
 The following code example creates a binding between the `enabled` property of a Button component and the `checked` property of a Checkbox component. This means that when the checkbox is not checked, the button will be disabled, and vice versa.
 
-```js
+{% highlight js %}
 var Button = require("montage/ui/button.reel").Button;
 var Checkbox = require("montage/ui/checkbox.reel").Checkbox;
 
@@ -59,22 +59,22 @@ Object.defineBinding(btn, "enabled", {
     boundObject: cb2,
     boundObjectPropertyPath: "checked"
 });
-```
+{% endhighlight %}
 
 To prevent the binding from executing immediately when the observed property value changes, add a `deferred` property to the binding descriptor object whose value is “false”.
 
-```js
+{% highlight js %}
 Object.defineBinding(btn, "enabled", {
     boundObject: cb2,
     boundObjectPropertyPath: "checked",
     deferred: true
 });
-```
+{% endhighlight %}
 
 ## Creating data bindings in a serialization
 Each serialized object in a serialization may specify a “bindings” property, which is an object that defines the bindings for that object. One advantage to define bindings in a serialization is the binding shorthand syntax, which lets you quickly and easily define bindings.
 
-```html
+{% highlight html %}
 <html>
 <head>
     <title>Data binding test</title>
@@ -105,7 +105,8 @@ Each serialized object in a serialization may specify a “bindings” property,
     <input type="checkbox" id="checkbox" name="" value="Checkbox">
 </body>
 </html>
-```
+{% endhighlight %}
+
 ## Data binding serialization shorthand syntax
 Montage provides a shorthand syntax when declaring data bindings in a serialization. An arrow symbol that indicates the source of the binding and whether its one-way or two-way. The symbol can take one of the following forms:
 
@@ -119,7 +120,7 @@ The `boundObject` and `boundObjectPropertyPath` properties of `defineBinding()` 
 `"boundProperty": {"direction-symbol": "@objectReference.key.path"}`
 
 To demonstrate consider an application whose serialization contains a Textfield component and a Slider component. To create a one-way binding between the Slider’s `value` property and the Textfield’s `value` property using the short-hand syntax:
-```json
+{% highlight json %}
 {
    "inputText": {
        "prototype": "textfield",
@@ -131,19 +132,19 @@ To demonstrate consider an application whose serialization contains a Textfield 
        "prototype": "slider"
     }
 }
-```
+{% endhighlight %}
 
 This means that changes to `slider.value` will be pushed to the Textfield. In code, this would be written as follows, assuming `inputText` is a Textfield instance and `slider` is a Slider 
 instance.
-```js
+{% highlight js %}
 Object.defineBinding(inputText, "value", {
     boundObject: slider,
     boundObjectPropertyPath: "value"
 });
-```
+{% endhighlight %}
 
 To define a one-way binding in the opposite direction (from the Textfield to the Slider), simply reverse the direction of the arrow symbol:
-```json
+{% highlight json %}
 {
    "inputText": {
        "prototype": "textfield",
@@ -155,17 +156,18 @@ To define a one-way binding in the opposite direction (from the Textfield to the
        "prototype": "slider"
     }
 }
-```
+{% endhighlight %}
 
 In code this would be written as follows:
-```js
+{% highlight js %}
 Object.defineBinding(slider, "value", {
     boundObject: textField,
     boundObjectPropertyPath: "value"
 });
-```
+{% endhighlight %}
+
 Or, equivalently, you can define the binding on the Slider object instead:
-```json
+{% highlight json %}
 {
    "inputText": {
        "prototype": "textfield"
@@ -177,10 +179,10 @@ Or, equivalently, you can define the binding on the Slider object instead:
        }
     }
 }
-```
+{% endhighlight %}
 
 To create a two-way binding between the object’s properties, with Textfield as the source, you add a single arrow pointing to @slider.value, and a double arrow pointing in the opposite direction:
-```json
+{% highlight json %}
 {
    "inputText": {
        "prototype": "textfield",
@@ -192,18 +194,18 @@ To create a two-way binding between the object’s properties, with Textfield as
        "prototype": "slider"
     }
 }
-```
+{% endhighlight %}
 
 Which is equivalent to the following code:
-```js
+{% highlight js %}
 Object.defineBinding(inputText, "value", {
     boundObject: slider,
     boundObjectPropertyPath: "value"
 });
-```
+{% endhighlight %}
 
 To create a two-way binding with Slider as the binding source, you add a single arrow pointing to the left, and a double arrow pointing to the right:
-```json
+{% highlight json %}
 {
    "inputText": {
        "prototype": "textfield",
@@ -212,10 +214,10 @@ To create a two-way binding with Slider as the binding source, you add a single 
        }
     }
 }
-```
+{% endhighlight %}
 
 Or, equivalently, you can declare the binding on the slider and reverse the direction of the arrow:
-```json
+{% highlight json %}
 {
    "slider": {
        "prototype": "slider",
@@ -224,10 +226,10 @@ Or, equivalently, you can declare the binding on the slider and reverse the dire
        }
     }
 }
-```
+{% endhighlight %}
 
 In long-form syntax, you would declare the following:
-```json
+{% highlight json %}
 {
    "slider": {
        "prototype": "slider",
@@ -239,7 +241,7 @@ In long-form syntax, you would declare the following:
        }
     }
 }
-```
+{% endhighlight %}
 
 ## One-way and two-way bindings
 By default, all data bindings are two-way. This means when the value of the observed property changes in either the source or the bound object, the new value is assigned to the corresponding property in the other object. In a one-way data binding, only changes to the property on the bound object are observed, not changes to source object. To make a data binding one-way you set the `oneway` property on the binding descriptor object to `true`.
@@ -247,17 +249,17 @@ By default, all data bindings are two-way. This means when the value of the obse
 ![Montage Data Binding](http://montagejs.org/docs/img/databinding.png)
 
 To demonstrate, below is a simple Montage object that defines a single property, `name`.
-```js
+{% highlight js %}
 var Montage = require("montage").Montage;
 var Person = exports.Person = Montage.create(Montage, {
     name: {
         value: null,
     }
 });
-```
+{% endhighlight %}
 
 We create two instances of the Person object and define a binding between their `name` properties:
-```js
+{% highlight js %}
 // Create two instances of Person
 var p1 = Person.create();
 var p2 = Person.create();
@@ -266,23 +268,24 @@ Object.defineBinding(p1, "name", {
   boundObject: p2,
   boundObjectPropertyPath: "name",
 });
-```
+{% endhighlight %}
 
 If you assign a value to `name` on either the `p1` or `p2` instances, then the value on the other object changes accordingly:
-```js
+{% highlight js %}
 p1.name = "Abe";
 console.log("p2.name is now: " + p2.name);
 // console says: "p2.name is now: Abe"
-```
-```js
+{% endhighlight %}
+
+{% highlight js %}
 p2.name = "Betty";
 console.log("p1.name is now: " + p1.name);
 // console says: "p1.name is now: Betty"
-```
+{% endhighlight %}
 
 If you set `oneway` in the `defineBinding()` call to `true`, then changes to `p2` will cause the binding to execute, but not changes to `p1`.
 
-```js
+{% highlight js %}
 // Create two Person instances:
 var p1 = Person.create();
 var p2 = Person.create();
@@ -294,11 +297,11 @@ Object.defineBinding(p1, "name", {
    boundObjectPropertyPath: "name",
    oneway: true
 });
-```
+{% endhighlight %}
 
 Any changes to `p1.name` does not update `p2.name`, but changes to `p2.name` does update `p1.name`.
 
-```js
+{% highlight js %}
 p1.name = "Thomas";
 console.log("p2.name is now: " + p2.name);
 // "p2.name is now: Kate". No change to p2 in oneway data binding.
@@ -306,4 +309,4 @@ console.log("p2.name is now: " + p2.name);
 p2.name = "Eleanor";
 console.log("p1.name is now: " + p1.name);
 // "p1.name is now: Eleanor"
-```
+{% endhighlight %}

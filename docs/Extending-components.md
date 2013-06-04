@@ -18,16 +18,16 @@ There are three options to extend a component’s template:
 ## Examples
 ### Extending the Toggle component only changing its markup
 
-```js
-//my-toggle.js
+my-toggle.js
+{% highlight js %}
 var Montage = require("montage").Montage,
     Toggle = require("ui/toggle").Toggle;
 
 exports.MyToggle = Montage.create(Toggle);
-```
+{% endhighlight %}
 
-```html
-// my-toggle.html
+my-toggle.html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,12 +51,12 @@ exports.MyToggle = Montage.create(Toggle);
     </div>
 </body>
 </html>
-```
+{% endhighlight %}
 
 ### Extending the Toggle component by only changing some of its logic
 
-```js
-//my-toggle.js
+my-toggle.js
+{% highlight js %}
 var Montage = require("montage").Montage,
     Toggle = require("montage/ui/toggle.reel").Toggle;
 
@@ -70,12 +70,12 @@ exports.MyToggle = Montage.create(Toggle, {
         value: "montage/ui/toggle.reel/toggle.html"
     }
 });
-```
+{% endhighlight %}
 
 ### Extending the Toggle component by adding styling elements
 
-```js
-//my-toggle.js
+my-toggle.js
+{% highlight js %}
 var Montage = require("montage").Montage,
     Toggle = require("montage/ui/toggle.reel").Toggle;
 
@@ -86,10 +86,10 @@ exports.MyToggle = Montage.create(Toggle, {
         }
     }
 });
-```
+{% endhighlight %}
 
-```html
-//my-toggle.html
+my-toggle.html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -126,4 +126,4 @@ exports.MyToggle = Montage.create(Toggle, {
    </div>
 </body>
 </html>
-```
+{% endhighlight %}
