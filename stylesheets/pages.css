@@ -166,3 +166,10 @@
     line-height: 1.5;
     list-style: none;
 }
+
+
+/* Comments ----------------------------------------- */
+
+.comments article {
+    max-width: 800px;
+}
