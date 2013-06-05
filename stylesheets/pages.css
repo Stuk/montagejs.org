@@ -225,21 +225,15 @@ body {
 
 .header-themes {
     position: relative;
-    height: 200px;
+    height: 580px;
     overflow: hidden;
     text-align: center;
-    -webkit-transition: height .3s;
-}
-
-.header-themes:hover {
-    height: 580px;
-    -webkit-transition-duration: .2s;
 }
 
 .themes-tablet,
 .themes-phone {
     position: absolute;
-    -webkit-transition: -webkit-transform .6s .2s;
+    -webkit-transition: -webkit-transform .6s;
 }
 
 .header-themes:hover .themes-tablet {
