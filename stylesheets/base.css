@@ -11,10 +11,10 @@ body {
 
 a {
     text-decoration: none;
-    color: hsl(220,80%,50%);
+    color: hsl(220, 100%, 66%);;
 }
 a:hover {
-    color: hsl(220,80%,60%);
+    color: hsl(220,80%,46%);
 }
 a:active {
     color: hsl(220,80%,40%);
@@ -51,6 +51,20 @@ article {
 
 .sub-title {
     margin-bottom: 0;
+}
+
+blockquote {
+    margin: 1.5em .5em;
+    border-left: 2px solid hsl(0, 0%, 50%);
+    padding-left: 1em;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 50%);
+}
+
+hr {
+    border: none;
+    border-bottom: 2px dashed hsl(0, 0%, 80%);
+    margin: 2em 0;
 }
 
 @media all and (max-width: 800px) {
