@@ -1,3 +1,5 @@
+/* @override http://localhost:4000/stylesheets/pages.css */
+
 /* These Styles only get used on sub-pages */
 
 
@@ -215,6 +217,50 @@
 
 
 /* Themes ----------------------------------------- */
+
+body {
+    /* Removes flicker */
+    -webkit-backface-visibility: hidden;
+}
+
+.header-themes {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: height .3s;
+}
+
+.header-themes:hover {
+    height: 580px;
+    -webkit-transition-duration: .2s;
+}
+
+.themes-tablet,
+.themes-phone {
+    position: absolute;
+    -webkit-transition: -webkit-transform .6s .2s;
+}
+
+.header-themes:hover .themes-tablet {
+    -webkit-transform: translateX(-60px);
+    -webkit-transition-duration: .2s;
+}
+.themes-tablet {
+    left: 50%;
+    margin-left: -450px; 
+}
+
+.header-themes:hover .themes-phone {
+    -webkit-transform: translateX(60px);
+    -webkit-transition-duration: .2s;
+}
+.themes-phone {
+    top: 104px;
+    left: 50%;
+    margin-left: 200px;
+}
+
 
 .themes img {
     max-width: 100%;

@@ -1,3 +1,5 @@
+/* @override http://localhost:4000/stylesheets/base.css */
+
 /* These Styles get shared between the index and sub pages */
 
 /* Globals ----------------------------------------- */
@@ -54,11 +56,12 @@ article {
 }
 
 blockquote {
-    margin: 1.5em .5em;
-    border-left: 2px solid hsl(0, 0%, 50%);
-    padding-left: 1em;
+    margin: 1.5em 0;
+    border-left: 4px solid hsl(0, 0%, 80%);
+    padding: .1em 1em;
     font-size: 1.5em;
     color: hsl(0, 0%, 50%);
+    background: hsla(0,0%,0%,.05);
 }
 
 hr {
