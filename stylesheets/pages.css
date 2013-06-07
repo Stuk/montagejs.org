@@ -118,12 +118,10 @@
 
 .subnav {
     position: fixed;
-    z-index: 1;
-    padding: 20px;
-    top: 96px;
-    right: 30px;
-    width: 200px;
-    background-color: hsl(0,0%,95%);
+    top: 142px;
+    left: 50%;
+    margin-left: -500px;
+    width: 180px;
 }
 
 .subnav summary {
@@ -153,9 +151,18 @@
     background-color: hsla(210,100%,50%,1);
 }
 
-
+.subnav ~ section {
+    /* Covers the subnav with a solid background*/
+    position: relative;
+    z-index: 1;
+    background: hsl(0,0%,95%);
+}
 
 /* Docs page ----------------------------------------- */
+
+.docs {
+    padding: 60px 40px 60px 240px;
+}
 
 .docs .header-container,
 .docs article {
@@ -258,11 +265,4 @@ body {
 
 .themes img {
     max-width: 100%;
-}
-
-
-/* Comments ----------------------------------------- */
-
-.comments article {
-    max-width: 800px;
 }
