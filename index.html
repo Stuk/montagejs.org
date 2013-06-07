@@ -9,10 +9,38 @@ about: true
         <h2 class="tagline">An <strong>HTML5 framework</strong> for building modern <strong>Web Apps</strong>.</h2>
     </section>
 
-    <nav class="bar links">
-        <a class="link download" href="docs/Quick-Start.html">Quick Start</a>
-        <a class="link docs" href="docs/">Docs</a>
-    </nav>
+
+    <section id="social" class="social">
+        <article>
+
+            <div class="button-group github">
+                <iframe src="http://ghbtns.com/github-btn.html?user=montagejs&repo=montage&type=watch&count=true"
+                  allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=montagejs&repo=montage&type=fork&count=true"
+                  allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+            </div>
+
+
+            <div class="button-group twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="montagejs" data-count="none">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <a href="https://twitter.com/montagejs" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @montagejs</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            <div class="button-group g-plus">
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+                  {parsetags: 'explicit'}
+                </script>
+                <!-- Place this tag where you want the +1 button to render. -->
+                <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+                <!-- Place this render call where appropriate. -->
+                <script type="text/javascript">gapi.plusone.go();</script>
+            </div>
+
+        </article>
+    </section>
 
     <section id="intro" class="intro">
         <article>
@@ -27,7 +55,7 @@ about: true
                     <p>Features include</p>
                     <ul>
                         <li>Reliable components and HTML templates</li>
-                        <li>JSON component model</li>
+                        <li>Declarative component model</li>
                         <li>Declarative data binding</li>                        
                         <li>Managed draw cycle</li>
                         <li>Implicit event delegation</li>
@@ -47,7 +75,7 @@ about: true
                 <p class="col col-2-3">MontageJS comes with a variety of self-contained, reusable, and reliable components for building native-quality HTML5 apps. You can use these components individually, nest them within others, or use our clean API to build your own. <a href="docs/component-overview" target="_blank">Learn more ></a></p>
             </div>
             
-            <h3 class="sub-title">JSON Component Model</h3>
+            <h3 class="sub-title">Declarative Component Model</h3>
 
             <div class="cols">
                 <p class="col col-2-3">Montage models components as standalone web pages. The HTML of a component (the "template") contains a DOM skeleton and comes to life with the inclusion of a JSON formatted block or file—a component object model, distinct but connected to the DOM—that describes how to dress up the DOM with connections among components. <a href="docs/montage-serialization-format" target="_blank">Learn more ></a></p>
