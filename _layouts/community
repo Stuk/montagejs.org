@@ -1,0 +1,25 @@
+---
+layout: default
+community: true
+---
+
+    <section id="docs" class="docs">
+        <article>
+            <div class="markdown-body">
+
+                {{content}}
+
+            </div>
+        </article>
+    </section>
+    
+    <nav class="subnav">
+        
+        <details open>
+            <a href="#">Events</a>
+            <a href="#">Meet-ups</a>
+            <a href="#">Forum</a>
+            <a href="#">Contact Us</a>
+        </details>
+        
+    </nav>
