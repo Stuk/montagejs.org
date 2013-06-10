@@ -1,6 +1,9 @@
 ---
 layout: docs
 title: Quick Start
+
+prev-page: 
+next-page: Exploring-components
 ---
 
 1. **Quick Start**

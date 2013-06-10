@@ -10,6 +10,20 @@ docs: true
                 {{content}}
 
             </div>
+            
+            <nav class="paging">
+                {% if page.prev-page != null %}
+                    <a href="/docs/{{ page.prev-page }}.html" class="paging--prev">Prev</a>
+                {% else %}
+                    <span class="paging--prev disabled">Prev</span>
+                {% endif %}
+                {% if page.next-page != null %}
+                    <a href="/docs/{{ page.next-page }}.html" class="paging--next">Next</a>
+                {% else %}
+                    <span class="paging--next disabled">Next</span>
+                {% endif %}
+            </nav>
+            
         </article>
     </section>
     

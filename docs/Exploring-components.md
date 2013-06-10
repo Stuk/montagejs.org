@@ -1,6 +1,9 @@
 ---
 layout: docs
 title: Exploring Components
+
+prev-page: Quick-Start
+next-page: Hello-Montage
 ---
 
 1. [Quick Start](https://github.com/montagejs/montage/wiki/Quick-Start)

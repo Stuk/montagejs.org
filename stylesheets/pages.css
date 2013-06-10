@@ -158,6 +158,36 @@
     background: hsl(0,0%,95%);
 }
 
+
+/* Paging ----------------------------------------- */
+
+.paging {
+    border-top: 1px solid hsla(0,0%,0%,.1);
+    margin-top: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.paging--prev,
+.paging--next {
+    margin: 0 .5em;
+}
+
+.paging--prev.disabled,
+.paging--next.disabled {
+    opacity: .3;
+}
+
+.paging--prev:before {
+    content: "←";
+    margin-right: 4px;
+}
+.paging--next:after {
+    content: "→";
+    margin-left: 4px;
+}
+
+
 /* Docs page ----------------------------------------- */
 
 .docs {
