@@ -209,6 +209,17 @@
 }
 
 
+/* Community page ----------------------------------------- */
+
+.community {
+    padding: 60px 40px 60px 240px;
+}
+
+.community article {
+    max-width: 800px;
+}
+
+
 /* Blog ----------------------------------------- */
 
 .blog article {
