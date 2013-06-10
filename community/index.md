@@ -3,7 +3,7 @@ layout: community
 title: Get involved with Montage
 ---
 
-# Montage Docs
+# Get involved with Montage
 Montage is an open source project. Here some place how you can get involved:
 
 ## Help
