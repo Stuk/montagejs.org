@@ -5,6 +5,11 @@ docs: true
 
     <section id="docs" class="docs">
         <article>
+        
+            {% if page.prev-page != null %}
+                <a href="https://github.com/simurai/simurai.github.io/blob/master/docs/{{ page.prev-page }}.md" class="edit">Improve this Doc</a>
+            {% endif %}
+            
             <div class="markdown-body">
 
                 {{content}}
@@ -14,13 +19,9 @@ docs: true
             <nav class="paging">
                 {% if page.prev-page != null %}
                     <a href="/docs/{{ page.prev-page }}.html" class="paging--prev">Prev</a>
-                {% else %}
-                    <span class="paging--prev disabled">Prev</span>
                 {% endif %}
                 {% if page.next-page != null %}
                     <a href="/docs/{{ page.next-page }}.html" class="paging--next">Next</a>
-                {% else %}
-                    <span class="paging--next disabled">Next</span>
                 {% endif %}
             </nav>
             

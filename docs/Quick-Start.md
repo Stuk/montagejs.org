@@ -1,14 +1,15 @@
 ---
 layout: docs
 title: Quick Start
+id: Quick-Start
 
 prev-page: 
 next-page: Exploring-components
 ---
 
 1. **Quick Start**
-2. [Exploring Components](https://github.com/montagejs/montage/wiki/Exploring-components)
-3. [Hello Montage](https://github.com/montagejs/montage/wiki/Hello-Montage)
+2. [Exploring Components](Exploring-components.html)
+3. [Hello Montage](Hello-Montage.html)
 
 ***
 

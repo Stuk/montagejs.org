@@ -1,14 +1,15 @@
 ---
 layout: docs
 title: Exploring Components
+id: Exploring-components
 
 prev-page: Quick-Start
 next-page: Hello-Montage
 ---
 
-1. [Quick Start](https://github.com/montagejs/montage/wiki/Quick-Start)
+1. [Quick Start](Quick-Start.html)
 2. **Exploring Components**
-3. [Hello Montage](https://github.com/montagejs/montage/wiki/Hello-Montage)
+3. [Hello Montage](Hello-Montage.html)
 
 ***
 Components make up the view portion of a Montage application.
